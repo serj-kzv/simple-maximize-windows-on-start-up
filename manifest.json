@@ -11,7 +11,6 @@
     ]
   },
   "browser_action": {
-    "default_icon": "icon.svg",
-    "browser_style": true
+    "default_icon": "icon.svg"
   }
 }
