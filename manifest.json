@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "simple-maximize-windows-on-start-up",
-  "version": "1",
+  "version": "2",
   "description": "Maximizes windows on start up.",
   "author": "serj-kzv",
   "homepage_url": "https://github.com/serj-kzv/simple-maximize-windows-on-start-up",
