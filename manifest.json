@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "simple-maximize-windows-on-start-up",
-  "version": "4",
+  "version": "5",
   "description": "Maximizes windows on start up.",
   "author": "serj-kzv",
   "homepage_url": "https://github.com/serj-kzv/simple-maximize-windows-on-start-up",
@@ -12,5 +12,12 @@
   },
   "browser_action": {
     "default_icon": "icon.svg"
+  },
+  "icons": {
+    "16": "icon.svg",
+    "20": "icon.svg",
+    "24": "icon.svg",
+    "32": "icon.svg",
+    "50": "icon.svg"
   }
 }
