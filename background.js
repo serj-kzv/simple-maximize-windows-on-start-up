@@ -6,11 +6,11 @@ const maximizeAll = async () => {
         maximized = {state: 'maximized'},
         {id} = await windows.getCurrent();
 
-    await Promise.allSettled(
+    Promise.allSettled(
         (await windows.getAll({windowTypes: ['normal']}))
-            .map(async ({id}) => await update(id, maximized))
+            .map(async ({id}) => await update(id, maximized)),
+        update(id, {focused: true}) // brings a current window focus
     );
-    update(id, {focused: true}) // brings a current window focus
 };
 
 browser.runtime.onStartup.addListener(maximizeAll);
