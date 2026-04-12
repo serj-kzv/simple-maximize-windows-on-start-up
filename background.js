@@ -4,8 +4,8 @@ const maximizeAll = async () => {
     const {windows} = browser, {update} = windows, maximized = {state: 'maximized'};
 
     Promise.allSettled([
-        ...(await windows.getAll()).map(async ({id}) => await update(id, maximized)),
-        async () => await update((await windows.getCurrent()).id, {focused: true}) // brings a current window focus
+        ...(await windows.getAll({windowTypes: ['normal']})).map(async ({id}) => await update(id, maximized)),
+        update((await windows.getCurrent()).id, {focused: true}) // brings a current window focus
     ]);
 };
 
